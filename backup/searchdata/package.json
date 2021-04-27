@@ -1,0 +1,23 @@
+{
+  "name": "searchdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cookie": "^0.4.1",
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "url-search-params-polyfill": "^8.1.0",
+    "vue-cookies": "^1.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

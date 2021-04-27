@@ -1,0 +1,24 @@
+{
+    "ko":{
+        "allsearch":"전체검색",
+        "approval":"전자결재",
+        "atthe":"모든결과",
+        "attheauthor":"작성자에서",
+        "atthecontent":"내용에서",
+        "atthetitle":"제목에서",
+        "optionvalue":"한국어",
+        "searchresult":"검색어 <span class='highlight'>&quot;@&quot;</span>에 대한 <span class='highlight'>#</span>건의 검색 결과입니다.",
+        "sortdate":"최신일자순"
+    },
+    "en":{
+        "allsearch":"AllSearch",
+        "approval":"Approval",
+        "atthe":"All Result",
+        "attheauthor":"At The Author",
+        "atthecontent":"At The Content",
+        "atthetitle":"At The Title",
+        "optionvalue":"English",
+        "searchresult":"Here are <span class='highlight'>#</span> results for the search term <span class='highlight'>&quot;@&quot;</span>.",
+        "sortdate":"RecentDate"
+    }
+}
