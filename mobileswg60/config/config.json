@@ -1,0 +1,40 @@
+{
+    "port": 4000,
+    "version": "v7",
+    "default_category": [
+        "person",
+        "board",
+        "approval",
+        "research"
+    ],
+    "default_field": [
+        "subject",
+        "body",
+        "author",
+        "dept",
+        "attached",
+        "attachtext",
+        "phone",
+        "jobposition",
+        "companytel",
+        "email",
+        "job"
+    ],
+    "default_index": {
+        "v6": "sis.emate.search.v0.2",
+        "v7": "sis.emate.search.v0.2"
+    },
+    "keyword_index": {
+        "v6": "searchkeyword",
+        "v7": "searchkeyword"
+    },
+    "elastic_address": {
+        "v6": "http://125.7.235.202:19200",
+        "v7": "http://10.10.31.38:19200"
+    },
+    "elastic_id": "elastic",
+    "elastic_pw": "123!@#qwe",
+    "getReaders":"http://koll.klri.re.kr/portal15.nsf/getReaders?OpenPage",
+    "getReaders_description":"현재 사용자의 권한(@UserNamesList)을 추출하는 주소",
+    "default_language":"ko"
+}
