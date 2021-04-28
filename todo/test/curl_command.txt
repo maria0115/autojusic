@@ -1,0 +1,2 @@
+[OPENDART POST 호출]
+curl -X POST -k -L --connect-timeout 30 -m 10 -H "Content-Type: application/x-www-form-urlencoded" -A "Mozilla/5.0" -H "Accept-Language: ko-kr,ko;q=0.8,en-us;" -d @D:\nodejs\app\crawling\test\opendart_post.data -D D:\nodejs\app\crawling\test\opendart_response.header -o D:\nodejs\app\crawling\test\opendart_response.content http://127.0.0.1:19920/opendart.do

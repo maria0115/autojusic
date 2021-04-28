@@ -1,0 +1,21 @@
+{
+	"port":19800,
+	"domino":{
+		"ssl":false,
+		"host":"gw.saerom.co.kr",
+		"httpport":80,
+		"username":"admin",
+		"password":"passw0rd",
+		"loginmethod":"post",
+		"wsdl":"/common/webservice.nsf/JDBCService?wsdl",
+		"wsagent":"/common/webservice.nsf/JDBCService?openagent"
+	},
+	"dbms":{
+		"productname":"oracle",
+		"server":"125.7.235.24",
+		"user":"sha",
+		"password":"sha",
+		"port":1521,
+		"database":"sha"
+	}
+}
