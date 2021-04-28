@@ -1,40 +1,38 @@
 {
     "port": 4000,
     "version": "v7",
-    "default_category": [
-        "person",
-        "board",
-        "approval",
-        "research"
-    ],
-    "default_field": [
-        "subject",
-        "body",
-        "author",
-        "dept",
-        "attached",
-        "attachtext",
-        "phone",
-        "jobposition",
-        "companytel",
-        "email",
-        "job"
-    ],
+    "default_category": [],
+    "default_field": [],
     "default_index": {
-        "v6": "sis.emate.search.v0.2",
-        "v7": "sis.emate.search.v0.2"
-    },
-    "keyword_index": {
-        "v6": "searchkeyword",
-        "v7": "searchkeyword"
+        "v7": "swg60.emate.search.v0.2"
     },
     "elastic_address": {
-        "v6": "http://125.7.235.202:19200",
-        "v7": "http://10.10.31.38:19200"
+        "v7": "http://125.7.235.50:19200"
     },
     "elastic_id": "elastic",
     "elastic_pw": "123!@#qwe",
-    "getReaders":"http://koll.klri.re.kr/portal15.nsf/getReaders?OpenPage",
-    "getReaders_description":"현재 사용자의 권한(@UserNamesList)을 추출하는 주소",
-    "default_language":"ko"
+    "getUsers": "새로 만들 페이지",
+    "preferences": {
+        "login": true,
+        "alarm": {
+            "today": true,
+            "mail": false,
+            "approval": true,
+            "works": false,
+            "board": true
+        },
+        "etiquette": {
+            "use": true,
+            "starttime": "11:00",
+            "endtime": "16:00"
+        },
+        "synchronize": true,
+        "display": "potal",
+        "listcount": "10",
+        "font": {
+            "size": "normal",
+            "font": "Sharing"
+        },
+        "mode": "light"
+    }
 }
