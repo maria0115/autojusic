@@ -1,0 +1,81 @@
+{
+    "port": 11352,
+    "domino": {
+        "serverAccess": "notes",
+        "serverAccess_description": "notes | diiop 중 하나 : 검색서버가 Windows나 Linux이면서 Notes Client를 설치할 수 있는경우 'notes'로 설정하면 CORBA로 서버 접속하므로 데이터 추출이 빠르다.",
+        "server": "mail.saerom.co.kr",
+        "username": "admin",
+        "password": "passw0rd",
+        "searchViewName": "$SearchView",
+        "searchColumnNames2Fields": {
+            "$dept": "dept",
+            "$subject": "subject",
+            "$author": "author",
+            "$created": "created",
+            "$nav": "nav",
+            "$photo": "photo",
+            "$attached": "attached",
+            "$url": "url",
+            "$category": "category",
+            "$originalurl": "originalurl",
+            "$jobposition": "jobposition",
+            "$companytel": "companytel",
+            "$phone": "phone",
+            "$email": "email",
+            "$job": "job"
+        }
+    },
+    "notes": {
+        "debugging": true,
+        "password": "skditofha",
+        "notesJvmPath": "D:/IBM/notes9/jvm",
+        "jarPath": "D:/nodejs/app/DominoMigration2Elastic/bin/migration.jar",
+        "description1": "OS CLASSPATH에 notes.jar와 NCSO.jar 설정하고, Notes 프로그램 경로를 PATH 설정",
+        "description2": "lastNotesPassword는 Notes 비밀번호, notesJvmPath는 Notes 프로그램 디렉터리 하위의 jvm 경로, jarPath는 Java 실행가능한 jar 경로"
+    },
+    "scheduler": {
+        "interval": 5,
+        "interval_description": "증분색인을 위한 주기(분), 예를들어 5이면 5분에 한번씩 색인대상 Database를 방문하여 마지막 색인 후 변경된 데잍를 재 색인합니다.",
+        "status": 1,
+        "status_description": "스케줄 진행 여부: 1=스케줄 진행, 0=스케줄 중지 (스케줄러는 계속해서 살아았지만, 0인경우 색인을 실행하지 않으며, 1로 바꾸면 그 즉시 색인 작업을 속개합니다.)",
+        "thread": 1,
+        "thread_description": "마이그레이션이나 증분색인 작업시 색인대상 NSF들을 랜덤하게 쓰레드에 할당하여 작업할 수 있도록 할때 그 쓰레드 수",
+        "logging": true,
+        "logging_description": "콘솔에 상세 작업 로그를 표시할것인지 여부",
+        "writeSendLogFile": false,
+        "writeSendLogFile_description": "엘라스틱 서버로 데이터 전송에 대한 파일을 기록할 것인지"
+    },
+    "realtime": {
+        "interval": 10,
+        "interval_description": "seconds",
+        "logging": true,
+        "writeSendLogFile": false,
+        "deleteSendLogFileDuration": 7,
+        "deleteSendLogFileDuration_description": "송수신로그파일 삭제 주기"
+    },
+    "search": {
+        "index_interval_description": "색인엔진이 얼마의 시간(분)으로 업데이트된 문서를 색인할것이지 분으로 설정",
+        "masterServer": "kms.saerom.co.kr",
+        "masterDatabase": "emate/search/v2/SearchMaster.nsf",
+        "elasticsearchVersion": "7",
+        "elasticsearchVersion_description": "엘라스틱서치 버전 (7.x를 권장하나 6.8을 설치한 경우 6.8 또는 6이라고 설정하고 아래 TypeName 을 '_doc'로 설정해야 한다.",
+        "elasticsearchHost": "http://125.7.235.12:19200",
+        "elasticsearchTypeName": "",
+        "elasticsearchTypeName_description": "엘라스틱서치의 버전 6까지는 문서를 Type명을 두고 구분하였는데, Version 7부터는 Type을 없앴다",
+        "elasticsearchId": "elastic",
+        "elasticsearchPassword": "123!@#qwe",
+        "elasticsearchDatabase": "sis.emate.search.v0.2",
+        "elasticsearchDatabase_description": "엘라스틱서치 통합검색용 데이터베이스 (인덱스)명",
+        "elasticsearchBulkSize": "100",
+        "timeZone": "",
+        "timeZone_description": "현재 서버의 타임존 (한국의 경우 + 9 이므로, '+09:00')",
+        "useAttachmentsText": false,
+        "useAttachmentsText_description": "문서의 첨부파일도 색인할것인지 여부(false=첨부색인 제외--기본값, true=첨부색인함)",
+        "attachmentsTextEngine": "synap",
+        "attachmentsTextEngine_description": "첨부파일에서 TEXT를 추출할때 사용하는 엔진명: synap=Synap필터를 사용함 (기본), 향 후 추가되는 엔진을 여기에 기술",
+        "attachmentsTextEnginePath": "D:/nodejs/app/DominoMigration2Elastic/bin/filefilter/synap/filter4-v4.24.0-windows_64bit_VC12/v4/snf_exe.exe",
+        "attachmentsTextEnginePath_description": "첨부파일 필터 실행파일이 위치한 경로를 입력",
+        "attachmentsTextEngineTimeout": "1000",
+        "attachmentsTextEngineTimeout_description": "첨부파일 필터기가 수행할 최대 실행 시간 (1초=1000)"
+    }
+}
